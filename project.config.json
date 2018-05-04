@@ -1,0 +1,69 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.98",
+	"appid": "wx5450cee0ea87fc33",
+	"projectname": "Pro",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"pluginRoot": "",
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "cate",
+					"pathName": "pages/category/category",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "product",
+					"pathName": "pages/product/product",
+					"query": "id=11"
+				},
+				{
+					"id": 2,
+					"name": "theme",
+					"pathName": "pages/theme/theme",
+					"query": "id=1&name=专题栏目一"
+				},
+				{
+					"id": -1,
+					"name": "cart",
+					"pathName": "pages/cart/cart",
+					"query": ""
+				}
+			]
+		}
+	}
+}
