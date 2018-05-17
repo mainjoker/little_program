@@ -34,13 +34,14 @@
                 <text  class="val">{{addressInfo.mobile}}</text>
               </view>
           </view>
-          <view class="detail">{{addressInfo.totalDetail}}</view>
+          <view class="detail">{{addressInfo.detail}}</view>
         </view>
         <view class="contact-icon" wx:if="{{orderStatus==0}}">
             <image src="../../imgs/icon/arrow@right.png"></image>
         </view>
       </view>
     </block>
+    
     <block wx:else>
       <view class="add-new-address">
         <text class="icon">+</text>
@@ -71,6 +72,6 @@
     <view class="total-account">
       付款合计：￥{{account}}
     </view>
-    <view wx:if="{{orderStatus<=1}}" class="pay {{!addressInfo?'disabled':''}}" bindtap="pay">去付款</view>
+     <view wx:if="{{orderStatus<=1}}" class="pay {{!addressInfo?'disabled':''}}" bindtap="pay">去付款        </view> 
   </view>
 </view>

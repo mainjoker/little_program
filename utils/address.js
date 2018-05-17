@@ -18,5 +18,31 @@ class Address extends Base {
     }
     return false;
   }
+  //更新用户地址
+  setUserAddress(addressInfo,callBack){
+      var params={
+        url:'address',
+        data: addressInfo,
+        type:'POST',
+        sCallBack:function(res){
+          callBack&&callBack(true,res);
+        },
+        eCallBack: function (res) {
+          allBack && callBack(false,res);
+        }
+      };
+      this.request(params);
+  }
+  getUserAddress(callBack){
+    var params = {
+      url: 'address/user',
+      type: 'POST',
+      sCallBack: function (res) {
+        callBack && callBack(res);
+      },
+    };
+    this.request(params);
+  }
+
 }
 export {Address};

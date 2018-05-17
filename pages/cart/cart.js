@@ -98,7 +98,7 @@ Page({
   //下单
   submitOrder:function(){
     wx.navigateTo({
-      url: '/pages/order/order?account=' + this.data.account,
+      url: '/pages/order/order?account=' + this.data.account+'&from=cart',
     })
   },
   delete: function (event) {

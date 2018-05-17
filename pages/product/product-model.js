@@ -12,6 +12,7 @@ class Product extends Base{
     };
     this.request(params);
   }
+  
   //加入购物车
   /*
   * id 商品id
